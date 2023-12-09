@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Ruwudu:wght@500&display=swap');
+
+*{
+    font-family: cairo;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+   background-color: #2C3E50;
+   align-items: center;
+   padding: 0 85px;
+   border-top: solid crimson 2px;
+   position: fixed;
+   width: 100%;
+   z-index: 999;
+}
+header nav a{
+
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 16px;
+    transition: ease .75s;
+}
+header nav a:hover{
+         color: #1abc9c;
+         font-size: 18px;
+}
+/* ------صورة البروفايل ------------- */
+.carsour{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    background-image: url(images/3.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+     background-color: rgba(0, 0, 0, 0.2);  /* درجةالشفافيه علي الصوره*/
+}
+.carsour span{
+    color: crimson;
+}
+.carsour div{
+    margin-left: 90px;
+}
+.carsour div a{
+    color: white;
+    background-color:#12a88c;
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+    padding:2.5px 5px;
+    display: inline-block;
+    margin-top: 5px;
+    transition: ease .5s;
+}
+.carsour div a:hover{
+    transform: scale(1.1);
+    /* font-size: 1.2em; */
+}
+.carsour div h2{
+color: #2C3E50;
+}
+
+/*--------real services-------*/
+.notilla{
+    margin: 80px 70px;
+    margin-bottom: 20px;
+}
+.notilla .servise-1{
+ display: flex;
+ text-align: center;
+}
+.notilla .servise-2{
+    display: flex;
+    text-align: center;
+    margin-top: 15px;
+}
+.notilla .servise-3{
+    display: flex;
+    text-align: center; 
+ }
+.notilla .notilla-img{
+    width: 40%;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  margin-left: 60px;
+  margin-right: 10px;
+   padding-bottom: 40px;
+}
+.servise-2 .notilla-img{
+   margin-left: 150px;
+}
+.notilla .notilla-img .animation{
+    border: solid rgb(246, 242, 242);
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px 6px #ccc ;
+}
+
+.notilla .notilla-desc{
+    width: 60%;
+}
+.notilla .notilla-desc h2{
+    color: brown;
+    padding-top: 30px;
+}
+.notilla .notilla-desc p{
+    font-weight: 500;
+    padding-top: 10px;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 6px 3px #ccc ;
+    border-radius: 10px;
+}
+
+/* -----------------all courses------------- */
+.courses{
+    color: white;
+    background-color: #2C3E50;
+    text-align: center;
+    padding: 0px 100px;
+}
+.courses h2{
+    border-bottom: solid crimson;
+    display: inline-block;
+    padding-top: 10px;
+}
+.courses .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.courses .container .card{
+    color:black;
+    background-color: white;
+    border: solid brown;
+    border-radius: 20px;
+    margin: 30px 15px;
+    width: 18em;
+    overflow: hidden;
+    
+}
+.courses .card a{
+    color: white;
+    background-color: crimson;
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+    padding:2.5px 1px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    transition: ease .5s;
+    width: 100px;
+    font-weight: 700;
+    
+}
+.courses .card a:hover{
+    background-color:#12a88c;
+    transform: scale(1.1);
+    /* font-size: 17px; */
+}
+.courses .card img {
+ width: 100%;
+ height: 120px;
+ border-radius: 10px;
+}
+.courses .card h3{
+    color: brown;
+    font-weight: 2000;
+}
+.courses .card-desc{
+    padding: 10px;
+}
+.courses .card-desc p{
+    font-size: small;
+    margin-bottom: 10px;
+}
+/* --------contact--------- */
+
+.contact{
+    padding: 100px;
+    background: rgb(26,188,173);
+background: linear-gradient(0deg, rgba(26,188,173,1) 15%, rgba(29,91,153,0.8911939775910365) 64%);
+text-align: center;
+}
+.contact h2{
+    color: white;
+    border-bottom: solid;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+.contact .input-form{
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    margin: 10px;
+}
+.contact .input-form label{
+    font-size: 12px;
+    position: absolute;
+    top: 40%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: all 0.15s;
+    pointer-events: none;
+}
+
+.contact .input-form input{
+  
+    border: none;
+    border-bottom: solid #12a88c;
+    outline: none;
+    padding: 2px 7px;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+}
+.contact .input-form input:hover~label,
+.contact .input-form input:valid~label{
+    top: 13px;
+    transform: translateY(-40%);
+}
+.contact .name{
+    display: flex;
+   
+}
+.contact .password{
+    display: flex;
+   
+}
+ 
+.contact .send{
+    padding: 5px 30px;
+    color: white;
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color:crimson;
+    transition: all 0.5s;
+}
+.contact .send:hover{
+    background-color:  brown;
+    transform: scale(1.1);
+}
+
+
+
+
+
+/*--------footer--------*/
+footer{
+    color: white;
+    background-color: #2C3E50;
+    font-family: "Ruwudu";
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: large;
+}
+/* -----------scroll bar--------------- */
+::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: crimson; 
+    border-radius: 2px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:#2C3E50;
+  }
+  /*-----------font to up---------------- */
+  .up{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: crimson;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height:40px;
+   justify-content: center;
+   display: flex;
+   align-items: center;
+   color: white;
+   /* transition: 1 ease; */
+  }
+  .up :hover{
+    color: rgb(45, 101, 145);
+  }
